@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="osmarender.xsl"?>
+ 
+<rules 
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  data="data.osm"
+  svgBaseProfile="full"
+  scale="1"
+  symbolScale="0.107"
+  textAttenuation="14"
+  minimumMapWidth="0.5"
+  minimumMapHeight="0.5"
+  withOSMLayers="yes"
+  withUntaggedSegments="no"
+  showScale="no"
+  showGrid="no"
+  showBorder="no"
+  showLicense="no"
+  interactive="no"
+  showRelationRoute="no"
+  symbolsDir="../stylesheets/symbols"
+  meter2pixel="0.1375">
+
+ 
+  <!-- <rule e="way" k="waterway" v="riverbank">
+      <line style="stroke-width: 6px; stroke-linecap: round; stroke: #7FC97F;"/>
+      <area class="waterway-riverbank"/>
+  </rule>
+   <rule e="way" k="natural" v="coastline">
+      <line style="stroke-width: 6px; stroke-linecap: round; stroke: #7FC97F;"/>
+      <area class="waterway-riverbank"/>
+  </rule>
+
+  <rule e="node" k="natural" v="beach">
+      <area class="waterway-riverbank"/>
+  </rule>
+  <rule e="node" k="natural" v="wetland">
+      <line style="stroke-width: 6px; stroke-linecap: round; stroke: #7FC97F;"/>
+      <area class="waterway-riverbank"/>
+  </rule>
+    <rule e="way" k="landuse" v="conservation">
+        <area class="waterway-riverbank"/>
+  </rule>
+  <rule e="way" k="man_made" v="breakwater">
+    <area class="waterway-riverbank"/>
+  </rule>
+  <rule e="way" k="natural" v="heath">
+      <area class="waterway-riverbank"/>
+  </rule>
+  <rule e="way" k="natural" v="wetland">
+    <rule e="way" k="wetland" v="bog">
+      <area class="waterway-riverbank"/>
+    </rule>
+  </rule>
+  <rule e="way" k="natural" v="heath">
+      <area class="natural-land"/>
+  </rule>  -->
+
+   <rule e="way" k="waterway" v="riverbank">
+      <line style="stroke-width: 2px; stroke-linecap: round; stroke: #7FC97F; fill:none;"/>
+      <area class="waterway-riverbank"/>
+  </rule>
+  
+
+
+  <rule e="way" k="highway" v="residential">
+      <line style="stroke-width: 2px; stroke-linecap: round; stroke: #7FC97F; fill:none;"/>
+     
+  </rule>
+  <rule e="way" k="highway" v="turning_circle">
+      <line style="stroke-width: 2px; stroke-linecap: round; stroke: #7FC97F;fill:none;"/>
+     
+  </rule>
+  <!-- <rule e="way" k="natural" v="coastline">
+    <line style="stroke-width: 2px; stroke-linecap: round; stroke: #7FC97F;fill:none;"/>
+    <area class="natural-coastline"/>
+  </rule> -->
+<!--   <rule e="way" k="natural" v="water">
+      <line style="stroke-width: 6px; stroke-linecap: round; stroke: #7FC97F;fill:none;"/>
+      <area class="waterway-riverbank"/>
+      <rule e="way" k="highway" v="unsurfaced">
+        <line style="stroke-width: 8px; stroke-linecap: round; stroke: #7FC97F;fill:none;"/>
+      </rule>
+     
+  </rule> -->
+
+
+<!--   <rule e="way" k="highway" v="unclassified">
+    <line style="stroke-width: 2px; stroke-linecap: round; stroke: #7FC97F;fill:none;"/>
+   
+  </rule> -->
+   
+
+
+  
+
+  <rule e="way" k="highway" v="tertiary">
+    <line style="stroke-width: 4px; stroke-linecap: round; stroke: #7FC97F;fill:none;"/>
+      
+  </rule>
+  <rule e="way" k="highway" v="secondary">
+    <line style="stroke-width: 6px; stroke-linecap: round; stroke: #7FC97F;fill:none;"/>
+ 
+  </rule>
+  <rule e="way" k="highway" v="primary">
+      <line style="stroke-width: 8px; stroke-linecap: round; stroke: #7FC97F;fill:none;"/>
+      
+  </rule>
+  <rule e="way" k="highway" v="trunk">
+      <line style="stroke-width: 10px; stroke-linecap: round; stroke: #7FC97F;fill:none;"/>
+      
+  </rule>
+  <rule e="way" k="highway" v="motorway">
+      <line style="stroke-width: 15px; stroke-linecap: round; stroke: #7FC97F;fill:none;"/>
+    </rule>
+      
+ 
+
+ <!--  <rule e="way" k="highway" v="*">
+    <line style="stroke-width: 4px; stroke-linecap: round; stroke: #7FC97F;"/>
+      
+  </rule> -->
+
+
+
+  
+
+
+ <defs>
+    <style xmlns="http://www.w3.org/2000/svg" type="text/css">
+     <!--  .map-background {
+        fill: black;
+        stroke: none;
+      } -->
+
+      .waterway-riverbank{
+        fill: black;
+      }
+      .all{
+        fill:white;
+      }
+      .natural-coastline {
+      fill: #b5d6f1;
+      stroke: #b5d6f1;
+      stroke-width: 0.4px;
+      }
+      .natural-land{
+      fill: red;
+      }
+    </style>
+  </defs>
+ 
+</rules>
+
