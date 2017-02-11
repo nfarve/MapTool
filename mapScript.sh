@@ -6,6 +6,7 @@ if [ "$#" -ne 5 ]; then
 fi
 
 wget -O "$5".osm "http://overpass-api.de/api/map?bbox=${1},${2},${3},${4}"
+# backup since first server sometimes doesn't work 
 # wget -O "$5".osm "http://api.openstreetmap.org/api/0.6/map?bbox=${1},${2},${3},${4}"
 cp "$5".osm osmarender/stylesheets/data.osm
 cd osmarender
@@ -20,5 +21,5 @@ mv osmarender/"$5"_version2.svg "$5"/
 mv osmarender/"$5"_version3.svg "$5"/
 mv osmarender/"$5"_version4.svg "$5"/
 mv "$5".osm "$5"/
-# mkdir ~/Dropbox\ \(MIT\)/EcoMaps/Existing\ Design\ Files/"$5"
-cp -r "$5" ~/Dropbox\ \(MIT\)/NewlyGeneratedMaps/"$5"
+#change to the location you prefer
+cp -r "$5" ~/Downloads/NewlyGeneratedMaps/"$5"
